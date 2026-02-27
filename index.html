@@ -1013,7 +1013,7 @@
           <a class="twitter-timeline"
              data-theme="dark"
              data-chrome="noheader nofooter noborders transparent"
-             data-tweet-limit="5"
+             data-tweet-limit="2"
              data-dnt="true"
              href="https://twitter.com/Ayomidecrypt_">
             <div style="padding: 2rem; text-align:center; color: var(--muted); font-size:0.8rem;">
@@ -1173,13 +1173,108 @@
   <p class="contact-sub">
     Have a project? A big idea? Let's talk. I'm open to collaborations, long-term partnerships, and creative consulting.
   </p>
+  <div style="width:100%; max-width:580px; margin-bottom:2.5rem; position:relative; z-index:1;">
+    <div style="background:var(--card); border:1px solid var(--border); padding:2.5rem; position:relative; overflow:hidden;">
+      <div style="position:absolute; top:0; left:0; right:0; height:2px; background:var(--accent);"></div>
+      
+      <div style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:1.5rem; text-align:left;">
+        // Send a Job Inquiry
+      </div>
+
+      <div id="form-success" style="display:none; text-align:center; padding:2rem 0;">
+        <div style="font-size:2.5rem; margin-bottom:1rem;">🎉</div>
+        <p style="font-family:'Syne',sans-serif; font-weight:700; font-size:1.2rem; color:var(--text); margin-bottom:0.5rem;">Message Sent!</p>
+        <p style="font-size:0.78rem; color:var(--muted);">Thanks for reaching out. Ayomide will get back to you soon.</p>
+      </div>
+
+      <div id="form-fields">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <label style="font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.5rem;">Your Name</label>
+            <input id="inp-name" type="text" placeholder="John Doe" style="width:100%; background:#0a0a0c; border:1px solid var(--border); color:var(--text); font-family:'DM Mono',monospace; font-size:0.8rem; padding:0.85rem 1rem; outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='#f5e600'" onblur="this.style.borderColor='var(--border)'" />
+          </div>
+          <div>
+            <label style="font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.5rem;">Your Email</label>
+            <input id="inp-email" type="email" placeholder="you@email.com" style="width:100%; background:#0a0a0c; border:1px solid var(--border); color:var(--text); font-family:'DM Mono',monospace; font-size:0.8rem; padding:0.85rem 1rem; outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='#f5e600'" onblur="this.style.borderColor='var(--border)'" />
+          </div>
+        </div>
+
+        <div style="margin-bottom:1rem;">
+          <label style="font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.5rem;">Service Needed</label>
+          <select id="inp-service" style="width:100%; background:#0a0a0c; border:1px solid var(--border); color:var(--text); font-family:'DM Mono',monospace; font-size:0.8rem; padding:0.85rem 1rem; outline:none; transition:border-color 0.2s; cursor:pointer;" onfocus="this.style.borderColor='#f5e600'" onblur="this.style.borderColor='var(--border)'">
+            <option value="" style="background:#0a0a0c;">Select a service...</option>
+            <option value="Graphic Design" style="background:#0a0a0c;">🎨 Graphic Design</option>
+            <option value="Content Writing" style="background:#0a0a0c;">✍️ Content Writing</option>
+            <option value="Social Media Management" style="background:#0a0a0c;">📱 Social Media Management</option>
+            <option value="Community Management" style="background:#0a0a0c;">🏘️ Community Management</option>
+            <option value="Website Design" style="background:#0a0a0c;">🌐 Website Design</option>
+            <option value="Full Package" style="background:#0a0a0c;">🚀 Full Creative Package</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom:1.5rem;">
+          <label style="font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.5rem;">Tell Me About Your Project</label>
+          <textarea id="inp-message" placeholder="Describe your project, timeline, and budget..." rows="4" style="width:100%; background:#0a0a0c; border:1px solid var(--border); color:var(--text); font-family:'DM Mono',monospace; font-size:0.8rem; padding:0.85rem 1rem; outline:none; transition:border-color 0.2s; resize:vertical; min-height:110px;" onfocus="this.style.borderColor='#f5e600'" onblur="this.style.borderColor='var(--border)'"></textarea>
+        </div>
+
+        <div id="form-error" style="display:none; color:#ff4444; font-size:0.72rem; margin-bottom:1rem; letter-spacing:0.05em;"></div>
+
+        <button onclick="sendEmail()" style="width:100%; background:#f5e600; color:#000; font-family:'DM Mono',monospace; font-size:0.78rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; border:none; padding:1rem; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(245,230,0,0.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+          Send Job Inquiry →
+        </button>
+      </div>
+    </div>
+  </div>
+
   <div class="contact-links">
-    <a href="/cdn-cgi/l/email-protection#aacbd3c5c7c3cecfead9c5c6cbc4cb84c9c5c7" class="contact-btn primary">Send a Message →</a>
     <a href="https://x.com/Ayomidecrypt_" target="_blank" class="contact-btn">Twitter / X</a>
     <a href="https://t.me/Ayomidecrypt_web3" target="_blank" class="contact-btn">Telegram</a>
     <a href="https://discord.com/users/ayomidecrypt" target="_blank" class="contact-btn">Discord</a>
   </div>
 </section>
+
+<script>
+function sendEmail() {
+  var name    = document.getElementById('inp-name').value.trim();
+  var email   = document.getElementById('inp-email').value.trim();
+  var service = document.getElementById('inp-service').value;
+  var message = document.getElementById('inp-message').value.trim();
+  var errEl   = document.getElementById('form-error');
+
+  errEl.style.display = 'none';
+
+  if (!name)    { errEl.textContent = 'Please enter your name.'; errEl.style.display='block'; return; }
+  if (!email || email.indexOf('@') < 0) { errEl.textContent = 'Please enter a valid email.'; errEl.style.display='block'; return; }
+  if (!service) { errEl.textContent = 'Please select a service.'; errEl.style.display='block'; return; }
+  if (!message) { errEl.textContent = 'Please describe your project.'; errEl.style.display='block'; return; }
+
+  var subject = encodeURIComponent('Job Inquiry: ' + service + ' from ' + name);
+  var body    = encodeURIComponent(
+    'Hi Ayomide,
+
+' +
+    'My name is ' + name + ' and I found you through your portfolio.
+
+' +
+    'Service Needed: ' + service + '
+
+' +
+    'Project Details:
+' + message + '
+
+' +
+    'Reply to me at: ' + email + '
+
+' +
+    'Looking forward to working with you!'
+  );
+
+  window.location.href = 'mailto:adeniranayomide699@gmail.com?subject=' + subject + '&body=' + body;
+
+  document.getElementById('form-fields').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
 
 <footer>
   <span class="footer-logo">AYOMIDE</span>
