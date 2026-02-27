@@ -788,7 +788,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#tweets">Tweets</a></li><li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -798,6 +798,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#tweets" onclick="closeMenu()">Tweets</a>
   <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
@@ -946,6 +947,188 @@
   </div>
 </section>
 
+
+<!-- TWITTER FEED SECTION -->
+<section id="tweets" style="border-top: 1px solid var(--border); padding: 7rem 3rem; background: var(--bg);">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <div class="section-label">// Latest on X</div>
+        <h2 class="section-title">What I'm<br />Talking About.</h2>
+      </div>
+      <a href="https://x.com/Ayomidecrypt_" target="_blank" style="
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--accent);
+        color: #000;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.85rem 1.6rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+        white-space: nowrap;
+        align-self: flex-end;
+      " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(245,230,0,0.3)'"
+         onmouseout="this.style.transform='';this.style.boxShadow=''">
+        ✕ Follow @Ayomidecrypt_
+      </a>
+    </div>
+
+    <!-- Twitter Embed Container -->
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    " id="tweet-grid">
+
+      <!-- Left: Official Twitter Timeline Embed -->
+      <div style="
+        border: 1px solid var(--border);
+        overflow: hidden;
+        position: relative;
+        min-height: 500px;
+        background: var(--card);
+      ">
+        <div style="
+          position: absolute;
+          top: 0; left: 0; right: 0;
+          padding: 1rem 1.5rem;
+          background: var(--card);
+          border-bottom: 1px solid var(--border);
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          z-index: 2;
+        ">
+          <span style="color: var(--accent); font-size: 1rem;">✕</span>
+          <span style="font-family:'Syne',sans-serif; font-weight:700; font-size:0.85rem; color: var(--text);">@Ayomidecrypt_</span>
+          <span style="font-size:0.65rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-left:auto;">Live Feed</span>
+        </div>
+        <div style="padding-top: 3.5rem;">
+          <a class="twitter-timeline"
+             data-theme="dark"
+             data-chrome="noheader nofooter noborders transparent"
+             data-tweet-limit="5"
+             data-dnt="true"
+             href="https://twitter.com/Ayomidecrypt_">
+            <div style="padding: 2rem; text-align:center; color: var(--muted); font-size:0.8rem;">
+              Loading tweets...
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Info + CTA cards -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+        <!-- Card 1: About my X -->
+        <div style="
+          background: var(--card);
+          border: 1px solid var(--border);
+          padding: 2rem;
+          position: relative;
+          overflow: hidden;
+        ">
+          <div style="
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: var(--accent);
+          "></div>
+          <div style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:0.8rem;">What I post</div>
+          <p style="font-family:'Syne',sans-serif; font-weight:700; font-size:1.15rem; color:var(--text); margin-bottom:1rem; line-height:1.3;">
+            Web3 insights, creative tips & behind-the-scenes.
+          </p>
+          <p style="font-size:0.78rem; color:var(--muted); line-height:1.8;">
+            From Solana alpha to design breakdowns — I share what's actually working in the space. No fluff, just value.
+          </p>
+        </div>
+
+        <!-- Card 2: Stats -->
+        <div style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1px;
+          background: var(--border);
+          border: 1px solid var(--border);
+        ">
+          <div style="background:var(--card); padding:1.5rem; text-align:center;">
+            <span style="font-family:'Syne',sans-serif; font-weight:800; font-size:2rem; color:var(--accent); display:block; text-shadow: 0 0 20px rgba(245,230,0,0.3);">🔥</span>
+            <span style="font-size:0.65rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.12em;">Daily Posts</span>
+          </div>
+          <div style="background:var(--card); padding:1.5rem; text-align:center;">
+            <span style="font-family:'Syne',sans-serif; font-weight:800; font-size:2rem; color:var(--accent); display:block; text-shadow: 0 0 20px rgba(245,230,0,0.3);">💡</span>
+            <span style="font-size:0.65rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.12em;">Web3 Alpha</span>
+          </div>
+          <div style="background:var(--card); padding:1.5rem; text-align:center;">
+            <span style="font-family:'Syne',sans-serif; font-weight:800; font-size:2rem; color:var(--accent); display:block; text-shadow: 0 0 20px rgba(245,230,0,0.3);">🎨</span>
+            <span style="font-size:0.65rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.12em;">Design Tips</span>
+          </div>
+          <div style="background:var(--card); padding:1.5rem; text-align:center;">
+            <span style="font-family:'Syne',sans-serif; font-weight:800; font-size:2rem; color:var(--accent); display:block; text-shadow: 0 0 20px rgba(245,230,0,0.3);">🚀</span>
+            <span style="font-size:0.65rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.12em;">Project Updates</span>
+          </div>
+        </div>
+
+        <!-- Card 3: CTA -->
+        <div style="
+          background: rgba(245,230,0,0.05);
+          border: 1px solid rgba(245,230,0,0.2);
+          padding: 2rem;
+          text-align: center;
+        ">
+          <p style="font-family:'Syne',sans-serif; font-weight:700; font-size:1rem; color:var(--text); margin-bottom:0.5rem;">
+            Stay in the loop 👀
+          </p>
+          <p style="font-size:0.75rem; color:var(--muted); margin-bottom:1.5rem; line-height:1.7;">
+            Follow me on X for daily Web3 content, design drops and Solana alpha.
+          </p>
+          <a href="https://x.com/Ayomidecrypt_" target="_blank" style="
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            transition: background 0.2s, color 0.2s;
+          " onmouseover="this.style.background='var(--accent)';this.style.color='#000'"
+             onmouseout="this.style.background='';this.style.color='var(--accent)'">
+            ✕ Follow Now →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Twitter Widget Script -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<style>
+  /* Responsive tweet section */
+  @media (max-width: 900px) {
+    #tweet-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  @media (max-width: 768px) {
+    #tweets {
+      padding: 4rem 1.25rem !important;
+    }
+  }
+</style>
+
 <section id="projects">
   <div class="projects-intro">
     <div>
@@ -1001,5 +1184,4 @@
 <footer>
   <span class="footer-logo">AYOMIDE</span>
   <span>of Solana · Creative Director & Brand Strategist</span>
-  <span>© 2026. All rights reserve
-
+  <span>© 2025. All rights re
