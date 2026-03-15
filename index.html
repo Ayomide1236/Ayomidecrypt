@@ -190,7 +190,6 @@ footer span{font-size:0.66rem;color:var(--muted);letter-spacing:0.08em;}
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Work</a></li>
-    <li><a href="#hire">Hire Me</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
@@ -203,7 +202,6 @@ footer span{font-size:0.66rem;color:var(--muted);letter-spacing:0.08em;}
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#skills" onclick="closeMenu()">Skills</a>
   <a href="#projects" onclick="closeMenu()">Work</a>
-  <a href="#hire" onclick="closeMenu()">Hire Me</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 
@@ -348,17 +346,7 @@ footer span{font-size:0.66rem;color:var(--muted);letter-spacing:0.08em;}
   </div>
 </section>
 
-<section class="section" id="hire">
-  <div class="section-label">// Open to Work</div>
-  <h2 class="section-title" style="margin-bottom:0.8rem;">Available for<br /><span style="color:var(--accent);">Hire Right Now.</span></h2>
-  <p style="color:var(--muted);font-size:0.85rem;line-height:1.9;max-width:500px;margin-bottom:3rem;">I&rsquo;m actively looking for roles and freelance opportunities in Web3. Ready to start immediately.</p>
-  <div class="hire-grid">
-    <div class="hire-card"><div class="hire-ico">&#127912;</div><div class="hire-title">Graphic Designer</div><p class="hire-desc">Social media graphics, banners, thread covers and brand visuals for Web3 projects.</p><div class="avail"><span class="avail-dot"></span>Available</div></div>
-    <div class="hire-card"><div class="hire-ico">&#9997;&#65039;</div><div class="hire-title">Content Writer</div><p class="hire-desc">Twitter threads, articles, project explainers, newsletters and Web3 copy.</p><div class="avail"><span class="avail-dot"></span>Available</div></div>
-    <div class="hire-card"><div class="hire-ico">&#128241;</div><div class="hire-title">Social Media Manager</div><p class="hire-desc">Managing X, Instagram and Telegram accounts for Web3 projects and DAOs.</p><div class="avail"><span class="avail-dot"></span>Available</div></div>
-    <div class="hire-card"><div class="hire-ico">&#127760;</div><div class="hire-title">Website Designer</div><p class="hire-desc">Landing pages, portfolios and Web3 project sites. Clean, fast and mobile ready.</p><div class="avail"><span class="avail-dot"></span>Available</div></div>
-  </div>
-</section>
+
 
 <section class="section" id="contact">
   <div class="section-label">// Contact</div>
@@ -368,7 +356,7 @@ footer span{font-size:0.66rem;color:var(--muted);letter-spacing:0.08em;}
     <a href="https://x.com/Ayomidecrypt_" target="_blank" rel="noopener" class="c-btn primary">DM on X &rarr;</a>
     <a href="https://t.me/Ayomidecrypt_web3" target="_blank" rel="noopener" class="c-btn">Telegram</a>
     <a href="https://discord.com/users/ayomidecrypt" target="_blank" rel="noopener" class="c-btn">Discord</a>
-    <a href="mailto:adeniranayomide699@gmail.com" class="c-btn">Email Me</a>
+    <a href="/cdn-cgi/l/email-protection#b1d0d5d4dfd8c3d0dfd0c8dedcd8d5d4878888f1d6dcd0d8dd9fd2dedc" class="c-btn">Email Me</a>
   </div>
 </section>
 
@@ -378,7 +366,7 @@ footer span{font-size:0.66rem;color:var(--muted);letter-spacing:0.08em;}
   <span>&copy; 2025. All rights reserved.</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function toggleMenu() {
     var menu = document.getElementById('mobileMenu');
     var burger = document.getElementById('hamburger');
@@ -429,12 +417,4 @@ footer span{font-size:0.66rem;color:var(--muted);letter-spacing:0.08em;}
         var sec = document.getElementById(id);
         if (sec && sec.offsetTop <= pos && sec.offsetTop + sec.offsetHeight > pos) {
           links.forEach(function(l) {
-            l.style.color = l.getAttribute('href') === '#' + id ? 'var(--accent)' : 'var(--muted)';
-          });
-        }
-      });
-    });
-  });
-</script>
-</body>
-</html>
+            l.
